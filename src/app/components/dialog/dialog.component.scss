@@ -1,0 +1,72 @@
+.dark-dialog {
+  background-color: rgb(26, 25, 25) !important;
+  border: 1px solid blue !important;
+  color: white !important;
+}
+.dark-dialog mat-form-field {
+  width: 100% !important;
+}
+.dark-dialog .mat-dialog-container {
+  background-color: black !important;
+  color: white !important;
+}
+.dark-dialog .mat-form-field-label {
+  color: white !important;
+}
+.dark-dialog .mat-input-element {
+  color: white !important;
+}
+.dark-dialog .mat-form-field-underline {
+  background-color: white !important;
+}
+
+button{
+  color: white !important;
+  border: 1px solid blue !important;
+  width: calc(100% + 15px);
+
+  &:disabled{
+    border: 1px solid rgb(82, 82, 82) !important;
+  }
+}
+
+h2, p{
+  color: white !important;
+}
+
+mat-label{
+  color: white !important;
+}
+
+input{
+  color: white !important;
+}
+
+.transparent-input {
+  width: 100% !important;
+}
+
+.transparent-input .mat-form-field-flex {
+  background-color: transparent !important;
+}
+
+.transparent-input .mat-form-field-label {
+  color: white !important;
+}
+
+.transparent-input .mat-input-element {
+  color: white !important;
+}
+
+.transparent-input .mat-form-field-underline {
+  background-color: white !important;
+}
+
+.transparent-input .mat-form-field-ripple {
+  background-color: white !important;
+}
+
+/* Para mudar a cor do placeholder */
+.transparent-input .mat-input-element::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}

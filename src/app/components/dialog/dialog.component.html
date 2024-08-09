@@ -1,0 +1,15 @@
+<div class="dark-dialog">
+  <h2 mat-dialog-title>Bem-vindo ao Chat</h2>
+  <mat-dialog-content>
+    <p>Por favor, insira seu nome para começar:</p>
+    <mat-form-field appearance="outline" class="transparent-input">
+      <mat-label>Seu nome</mat-label>
+      <input matInput [(ngModel)]="name" required />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions [align]="'center'">
+    <button mat-button [mat-dialog-close]="name" [disabled]="!name">
+      Entrar
+    </button>
+  </mat-dialog-actions>
+</div>

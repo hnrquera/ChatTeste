@@ -1,0 +1,16 @@
+<div class="chat-container d-flex flex-column h-100">
+  <div class="messages flex-grow-1 overflow-auto p-3">
+    <div *ngFor="let msg of messages" class="message-wrapper d-flex" [ngClass]="{'justify-content-end': msg.user === user}">
+      <div class="message p-2 mb-2 rounded" [ngClass]="{'bg-light text-dark': msg.user !== user, 'bg-success text-white': msg.user === user}">
+        <strong>{{ msg.user }}</strong>: {{ msg.text }}
+        <div class="timestamp text-muted small">{{ msg.timestamp | date:'dd/MM/yyyy HH:mm:ss' }}</div> <!-- Exibindo o horário -->
+      </div>
+    </div>
+  </div>
+  <div class="input-area p-3">
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="messageContent" placeholder="Digite uma mensagem" aria-label="Message">
+      <button class="btn btn-outline-primary text-light" type="button" [disabled]="messageContent.length < 1" (click)="sendMessage(user, messageContent)">Enviar</button>
+    </div>
+  </div>
+</div>

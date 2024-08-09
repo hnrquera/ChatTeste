@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+// Reset básico
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.dark-dialog-container .mat-dialog-container {
+  background-color: black;
+  color: white;
+}
+
+.dark-dialog-container .mat-dialog-title,
+.dark-dialog-container .mat-dialog-content {
+  color: white;
+}
+
+.dark-dialog-container .mat-form-field-label {
+  color: white;
+}
+
+.dark-dialog-container .mat-input-element {
+  color: white;
+}
+
+.dark-dialog-container .mat-form-field-underline {
+  background-color: white;
+}
+
+.dark-dialog-container .mat-button {
+  color: white;
+}

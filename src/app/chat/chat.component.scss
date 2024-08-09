@@ -1,0 +1,38 @@
+.chat-container {
+  height: 100%;
+  background-color: #3f3c3c;
+  border-radius: 15px;
+}
+
+.messages {
+  background-color: #3f3c3c;
+  border-radius: 15px;
+}
+
+.message-wrapper {
+  margin-bottom: 30px;
+}
+
+.message {
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.timestamp {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.input-area {
+  input{
+    color: white;
+    background-color: #3f3c3c00;
+    border: 1px solid blue;
+
+    &::placeholder{
+      color: white;
+    }
+  }
+}

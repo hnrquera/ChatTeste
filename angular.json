@@ -17,6 +17,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "externalDependencies": ["http", "https", "url", "util", "net"],
+            "allowedCommonJsDependencies": [
+              "tough-cookie",
+              "node-fetch",
+              "fetch-cookie",
+              "abort-controller",
+              "ws",
+              "eventsource"
+            ],
             "outputPath": "dist/chat-teste",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -32,7 +41,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -91,6 +102,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
             "scripts": []
